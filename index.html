@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <style>
+
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    body{
+      width: 100%;
+    }
+
+    :root{
+      --White: hsl(0, 0%, 100%);
+      --Light-gray: hsl(212, 45%, 89%);
+      --Grayish-blue: hsl(220, 15%, 55%);
+      --Dark-blue: hsl(218, 44%, 22%);
+    }
+
+
+    .workspace{
+      background-color: var(--Light-gray);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .box{
+      background-color: var(--White);
+      width: 300px;
+      height: 450px;
+      border-radius: 15px;
+      box-shadow: 0.6px 2px 5px 0px #0000006e;
+      
+    }
+    .qr{
+      
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    img{
+      width: 270px;
+      height: 270px;
+      border-radius: 10px;
+
+    }
+
+  
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Cookie&family=Outfit:wght@400;700&display=swap');
+
+    .textos{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      width: 260px;
+      height: 150px;
+      margin: auto;
+
+      text-align: center;
+      font-family: 'Outfit', sans-serif
+    }
+
+    .texto1 p{
+      color: var(--Dark-blue);
+      display: flex;
+      justify-content: center;
+      font-weight: 700;
+    }
+    .texto2 p{
+      color: var(--Grayish-blue);
+      display: flex;
+      justify-content: center;
+      font-size: 15px;
+      font-weight: 400;
+      
+      
+    }
+
+
+  </style>
+
+
+</head>
+<body>
+
+    <section class="workspace">
+      <div class="box">
+        <div class="qr">
+          <img src="images/image-qr-code.png">
+        </div>
+
+        <div class="textos">
+          <div class="texto1">
+            <p>Improve your front-end</p>
+            <p>skills by building projects</p>
+          </div>
+          <div class="texto2">
+            <p>
+              Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+            </p>
+          </div>
+      </div>
+      </div>
+    </section>
+
+
+
+  
+</body>
+</html>
